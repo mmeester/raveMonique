@@ -1,0 +1,30 @@
+
+// foundation
+@import
+  "zurb/zurb";
+
+
+// main styles
+@import
+  "functions/functions",
+  "mixins/mixins",
+  "color/color",
+	"base",
+	"grid/grid",
+  "typography/typography",
+  "icons",
+  "slick";
+@import
+  "elements/elements",
+  "components/components";
+
+// Foundation margin and padding reset
+.row{
+	&,.row{ margin: 0; padding: 0;
+		.column,.columns{margin: 0; padding: 0; }
+	}
+}
+
+#logo{ display: block; position: absolute; width: 240px; height: 60px; top:20%; left: 50%; transform: translate(-50%,-50%); background: url(../img/ravemonique.png) no-repeat center center; background-size: cover; text-indent: -9999px;
+   @include breakpoint(medium) { width: 700px; height: 120px; top: 50%; }
+}
